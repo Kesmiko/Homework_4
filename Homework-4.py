@@ -9,9 +9,7 @@ def total_salary(path):
             string = line.split(",")
             total = total + float(string[1])
             average = total / len(lines)
-            total_sal = f"Cума заробітної плати: {total}"
-            average_sal = f"Середня заробітна плата: {average}"
-        return f"{total_sal}, {average_sal}"
+        return (total,average)
 
 print(total_salary("Salary.txt"))
 
